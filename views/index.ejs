@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BISA BOSSS</title>
+  </head>
+  <body>
+    <h1>Image Upload Example</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <input type="file" name="image" />
+      <button type="submit">Upload</button>
+    </form>
+    <hr />
+    <h2>Uploaded Images</h2>
+    <% for(let i = 0; i < images.length; i++) { %>
+    <img src="<%= images[i] %>" width="200" height="200" />
+    <% } %>
+  </body>
+</html>
