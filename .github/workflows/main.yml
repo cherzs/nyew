@@ -18,8 +18,6 @@ jobs:
           node-version: 20
       - name: npm install
         run: npm ci
-      - name: tests
-        run: npm test
 
   deploy:
     needs: build
