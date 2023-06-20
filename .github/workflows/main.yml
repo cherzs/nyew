@@ -34,7 +34,7 @@ jobs:
           node-version: 14
 
       - name: Install SSH client
-        run: apt-get install -y openssh-client
+        run: sudo apt-get install -y openssh-client
 
       - name: Deploy via SSH
         uses: easingthemes/ssh-deploy@main
