@@ -43,8 +43,8 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-rlgoDzvc -i --delete"
           SOURCE: "/"
-          REMOTE_HOST: api.achmadsyarif.com
-          REMOTE_USER: u1566631
-          REMOTE_PORT: 65002
+          REMOTE_HOST: ${{secrets.HOST_PRIVATE_KEY}}
+          REMOTE_USER: ${{secrets.USER_PRIVATE_KEY}}
+          REMOTE_PORT: ${{secrets.PORT_PRIVATE_KEY}}
           TARGET: /home/u156631/public_html/test
           EXCLUDE: "/dist/,/node_modules/"
