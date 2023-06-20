@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 20
+          node-version: 14
 
       - name: Install dependencies
         run: npm install
@@ -42,8 +42,8 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-rlgoDzvc -i --delete"
           SOURCE: "/"
-          REMOTE_HOST: ${{secrets.HOST_PRIVATE_KEY}}
-          REMOTE_USER: ${{secrets.USER_PRIVATE_KEY}}
-          REMOTE_PORT: ${{secrets.PORT_PRIVATE_KEY}}
+          REMOTE_HOST: ${{ secrets.HOST_PRIVATE_KEY }}
+          REMOTE_USER: ${{ secrets.USER_PRIVATE_KEY }}
+          REMOTE_PORT: ${{ secrets.PORT_PRIVATE_KEY }}
           TARGET: /home/u156631/public_html/test
           EXCLUDE: "/dist/,/node_modules/"
