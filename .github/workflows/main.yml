@@ -45,5 +45,5 @@ jobs:
           REMOTE_HOST: ${{ secrets.HOST_PRIVATE_KEY }}
           REMOTE_USER: ${{ secrets.USER_PRIVATE_KEY }}
           REMOTE_PORT: ${{ secrets.PORT_PRIVATE_KEY }}
-          TARGET: /home/u156631/public_html/test
+          TARGET: /home/u1566631/public_html/test
           EXCLUDE: "/dist/,/node_modules/"
